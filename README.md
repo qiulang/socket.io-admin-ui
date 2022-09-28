@@ -39,3 +39,4 @@ Only when socket.io-redis & @socket.io/admin-ui works together and  `socket.emit
 
 
 
+Both socket.io-redis 6&7 have this problem.

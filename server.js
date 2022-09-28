@@ -1,7 +1,8 @@
 import { default as express } from "express";
 import { createServer } from "http";
 import { Server } from "socket.io";
-import { createAdapter } from "socket.io-redis";
+// import { createAdapter } from "socket.io-redis";
+import { createAdapter } from "@socket.io/redis-adapter";
 import { createClient } from "redis";
 import { instrument } from "@socket.io/admin-ui";
 
