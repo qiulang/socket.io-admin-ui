@@ -23,3 +23,19 @@ Other branches:
 Please fork this project, edit it to reproduce the incorrect behavior and link it in the discussion [here](https://github.com/socketio/socket.io/discussions/new).
 
 This is really important for us to be able to help you. Thanks!
+
+
+
+## socket.io-redis & @socket.io/admin-ui
+
+Only when socket.io-redis & @socket.io/admin-ui works together and  `socket.emit('xxx', cb)` the sever will crash
+
+```
+  // with callback it will crush server
+  socket.emit('login', {user:"10001",token:"fake"},reply => {})
+  // no callback it is fine
+  // socket.emit('login', {user:"10001",token:"fake"})
+```
+
+
+

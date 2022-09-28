@@ -6,11 +6,15 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
+    "@socket.io/admin-ui": "^0.4.0",
     "express": "~4.17.1",
+    "redis": "^4.3.1",
     "socket.io": "^4.0.0",
-    "socket.io-client": "^4.0.0"
+    "socket.io-client": "^4.0.0",
+    "socket.io-redis": "^6.1.1"
   },
   "scripts": {
+    "prestart": "redis-server &",
     "start": "node server.js",
     "client": "node client.js"
   }
